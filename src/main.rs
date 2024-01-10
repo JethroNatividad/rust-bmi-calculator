@@ -29,6 +29,24 @@ mod tests {
         assert_eq!(calculate_bmi(66.0, 180.0), 29.05);
     }
 }
+
+fn get_input<T: std::str::FromStr>(prompt: &str) -> T {
+    loop {
+        print!("{}", prompt);
+        io::stdout().flush().unwrap();
+
+        let mut input = String::new();
+        io::stdin()
+            .read_line(&mut input)
+            .expect("Failed to read input");
+
+        match input.trim().parse() {
+            Ok(value) => break value,
+            Err(_) => println!("Invalid input. Please try again."),
+        }
+    }
+}
+
 fn main() {
     // Prompt for height, "What is your height(inches)? "
     // Prompt for weight, "What is your weight(lbs)? "
