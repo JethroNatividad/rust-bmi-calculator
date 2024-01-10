@@ -62,7 +62,6 @@ fn main() {
         value if value > 25.0 => "You are overweight. You should see your doctor.",
         _ => "You are within the ideal weight range.",
     };
-    println!("Your BMI is {}.", bmi)
-    // Your BMI is {}.
-    // bmi < 18.5 = "You are underweight. You should see your doctor." | "You are within the ideal weight range." | bmi > 25.0 "You are overweight. You should see your doctor."
+    println!("Your BMI is {}.", bmi);
+    println!("{}", bmi_status);
 }
