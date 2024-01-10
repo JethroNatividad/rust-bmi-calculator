@@ -6,7 +6,7 @@
 // "You are underweight. You should see your doctor." | "You are within the ideal weight range." | "You are overweight. You should see your doctor."
 
 fn calculate_bmi(height: f64, weight: f64) -> f64 {
-    let bmi = (weight / (height * height)) * 703.0;
+    let bmi: f64 = (weight / (height * height)) * 703.0;
     // round to 2 decimal digits
     bmi
 }
