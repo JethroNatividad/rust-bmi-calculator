@@ -13,7 +13,7 @@ fn round_decimal(number: f64, place: i32) -> f64 {
 fn calculate_bmi(height: f64, weight: f64) -> f64 {
     let bmi: f64 = (weight / (height * height)) * 703.0;
     // round to 2 decimal digits
-    bmi
+    round_decimal(bmi, 2)
 }
 #[cfg(test)]
 mod tests {
