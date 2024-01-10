@@ -5,6 +5,10 @@
 // Your BMI is {}.
 // "You are underweight. You should see your doctor." | "You are within the ideal weight range." | "You are overweight. You should see your doctor."
 
+fn calculate_bmi(height: f64, width: f64) -> f64 {
+    // bmi = (weight / (height × height))* 703
+    // round to 2 decimal digits
+}
 #[cfg(test)]
 mod tests {
     use super::*;
