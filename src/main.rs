@@ -30,5 +30,9 @@ mod tests {
     }
 }
 fn main() {
-    println!("Hello, world!");
+    // Prompt for height, "What is your height(inches)? "
+    // Prompt for weight, "What is your weight(lbs)? "
+    // calculate the bmi
+    // Your BMI is {}.
+    // bmi < 18.5 = "You are underweight. You should see your doctor." | "You are within the ideal weight range." | bmi > 25.0 "You are overweight. You should see your doctor."
 }
