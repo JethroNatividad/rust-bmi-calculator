@@ -52,8 +52,17 @@ fn get_input<T: std::str::FromStr>(prompt: &str) -> T {
 
 fn main() {
     // Prompt for height, "What is your height(inches)? "
+    let height: f64 = get_input("What is your height(inches)? ");
     // Prompt for weight, "What is your weight(lbs)? "
+    let weight: f64 = get_input("What is your weight(lbs)? ");
     // calculate the bmi
+    let bmi: f64 = calculate_bmi(height, weight);
+    let bmi_status: &str = match bmi {
+        value if value < 18.5 => "You are underweight. You should see your doctor.",
+        value if value > 25.0 => "You are overweight. You should see your doctor.",
+        _ => "You are within the ideal weight range.",
+    };
+    println!("Your BMI is {}.", bmi)
     // Your BMI is {}.
     // bmi < 18.5 = "You are underweight. You should see your doctor." | "You are within the ideal weight range." | bmi > 25.0 "You are overweight. You should see your doctor."
 }
