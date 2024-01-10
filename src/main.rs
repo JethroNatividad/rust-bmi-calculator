@@ -1,3 +1,6 @@
+use std::io;
+use std::io::Write;
+
 // Write a program that calculates the BMI
 // Inputs: height inches, weight lbs.
 // Process: bmi = (weight / (height × height))* 703
