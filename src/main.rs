@@ -23,8 +23,8 @@ mod tests {
     fn test_calculate_bmi() {
         assert_eq!(calculate_bmi(72.0, 154.0), 20.88);
         assert_eq!(calculate_bmi(64.0, 140.0), 24.03);
-        assert_eq!(calculate_bmi(69.0, 155.0), 22.92);
-        assert_eq!(calculate_bmi(71.0, 165.0), 23.03);
+        assert_eq!(calculate_bmi(69.0, 155.0), 22.89);
+        assert_eq!(calculate_bmi(71.0, 165.0), 23.01);
         assert_eq!(calculate_bmi(70.0, 120.0), 17.22);
         assert_eq!(calculate_bmi(66.0, 180.0), 29.05);
     }
